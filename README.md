@@ -4,7 +4,7 @@ This project demonstrates a race condition around concurrent transactions that w
 
 ## How It Works
 
-The project uses Docker Compose to set up a testing environment with a PostgreSQL database. It simulates the situation where multiple concurrent transactions attempt to withdraw 1 unit from the stock simultaneously. This situation can lead to unexpected results, such as negative balance in the stock or transactions overlapping each other.
+The project uses Docker Compose to set up a testing environment with a PostgreSQL database. It simulates the situation in which multiple concurrent transactions attempt to remove 1 unit from inventory simultaneously. This situation can lead to unexpected results, such as a negative inventory balance or overlapping transactions. Therefore, this solution can be used in systems with a lot of access competition, as a lock is not used during processing.
 
 ## Prerequisites
 
